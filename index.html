@@ -1,0 +1,42 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Border Radius Previewer</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Border-radius Previewer</h1>
+		<div class="container">
+			<div class="valueType">
+				<label for="pixels">Pixels</label>
+				<input type="radio" name="pixels" id="pixels" />
+				<label for="percentage">Percentage</label>
+				<input type="radio" name="percentage" id="percentage" />
+			</div>
+			<div class="options">
+				<label for="top-left">top-left</label>
+				<input type="number" name="top-left" id="top-left" />
+
+				<label for="top-left">top-right</label>
+				<input type="number" name="top-right" id="top-right" />
+
+				<label for="top-left">bottom-right</label>
+				<input type="number" name="bottom-right" id="bottom-right" />
+
+				<label for="top-left">bottom-left</label>
+				<input type="number" name="bottom-left" id="bottom-left" />
+			</div>
+
+			<div class="box"></div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>

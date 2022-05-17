@@ -1,0 +1,31 @@
+/** @format */
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+body {
+	width: 100%;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.options,
+.valueType {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+.box {
+	width: 20rem;
+	height: 20rem;
+	border: 2px solid black;
+	background-color: gray;
+	border-radius: 25px;
+}
