@@ -16,22 +16,51 @@
 		<div class="container">
 			<div class="valueType">
 				<label for="pixels">Pixels</label>
-				<input type="radio" name="pixels" id="pixels" />
+				<input type="radio" name="unit" id="pixels" value="px" checked />
+
 				<label for="percentage">Percentage</label>
-				<input type="radio" name="percentage" id="percentage" />
+				<input type="radio" name="unit" id="percentage" value="%" />
 			</div>
 			<div class="options">
 				<label for="top-left">top-left</label>
-				<input type="number" name="top-left" id="top-left" />
+				<input
+					type="number"
+					name="top-left"
+					id="top-left"
+					class="input"
+					min="0"
+					value="0"
+				/>
 
-				<label for="top-left">top-right</label>
-				<input type="number" name="top-right" id="top-right" />
+				<label for="top-right">top-right</label>
+				<input
+					type="number"
+					name="top-right"
+					id="top-right"
+					class="input"
+					min="0"
+					value="0"
+				/>
 
-				<label for="top-left">bottom-right</label>
-				<input type="number" name="bottom-right" id="bottom-right" />
+				<label for="bottom-right">bottom-right</label>
+				<input
+					type="number"
+					name="bottom-right"
+					id="bottom-right"
+					class="input"
+					min="0"
+					value="0"
+				/>
 
-				<label for="top-left">bottom-left</label>
-				<input type="number" name="bottom-left" id="bottom-left" />
+				<label for="bottom-left">bottom-left</label>
+				<input
+					type="number"
+					name="bottom-left"
+					id="bottom-left"
+					class="input"
+					min="0"
+					value="0"
+				/>
 			</div>
 
 			<div class="box"></div>
