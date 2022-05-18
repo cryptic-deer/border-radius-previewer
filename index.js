@@ -2,8 +2,6 @@
 
 const box = document.querySelector(".box");
 
-const inputFields = document.querySelectorAll(".input");
-
 const topLeftInput = document.querySelector("#top-left");
 const topRightInput = document.querySelector("#top-right");
 const bottomRightInput = document.querySelector("#bottom-right");
@@ -11,7 +9,15 @@ const bottomLeftInput = document.querySelector("#bottom-left");
 
 const radioButtons = document.querySelectorAll(`input[name="unit"]`);
 
-const unitChooser = () => {};
+let selectedUnit;
+const unitChooser = () => {
+	for (const radioButton of radioButtons) {
+		if (radioButton.checked) {
+			selectedUnit = radioButton.value;
+			break;
+		}
+	}
+};
 
 const changeRadius = (cornerInput, corner) => {
 	cornerInput.addEventListener("input", e => {
@@ -19,7 +25,8 @@ const changeRadius = (cornerInput, corner) => {
 			? (e.target.value = 0)
 			: (e.target.value = e.target.value.replace(/^0+/, ""));
 
-		box.style.cssText += `${corner}: ${e.target.value}px`;
+		unitChooser();
+		box.style.cssText += `${corner}: ${e.target.value}${selectedUnit}`;
 	});
 };
 
